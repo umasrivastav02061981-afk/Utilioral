@@ -1,0 +1,21 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.age{max-width:420px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700}
+label small{font-weight:400;opacity:.7;font-size:.65rem}
+.age input{width:100%;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;color:var(--ink);background:#fff8ea;outline:none}
+
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);padding:12px 6px;text-align:center}
+.tile b{display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.2rem;line-height:1.1}
+.tile span{font-size:.65rem}
+.t1{background:#F6C9A8}
+.t2{background:#F3DC95}
+.t3{background:#C9D5A8}
+
+.result{border:3px solid var(--ink);border-radius:4px;padding:8px 16px;background:#E9D3A6}
+.row{display:flex;justify-content:space-between;gap:10px;padding:8px 0}
+.row + .row{border-top:2px dashed var(--ink)}
+.row b{text-align:right}
+.note{text-align:center;min-height:1em;font-size:.65rem;color:var(--rust)}

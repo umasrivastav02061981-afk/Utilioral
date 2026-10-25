@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Age Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="agecalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Age <em>Calculator.</em></h1>
+  </section>
+
+  <main class="age">
+    <label>Date of birth
+      <input id="dob" type="date">
+    </label>
+
+    <label>Age on this date <small class="mono">default: today</small>
+      <input id="on" type="date">
+    </label>
+
+    <div class="tiles">
+      <div class="tile t1"><b id="ty">—</b><span class="mono">Years</span></div>
+      <div class="tile t2"><b id="tm">—</b><span class="mono">Months</span></div>
+      <div class="tile t3"><b id="td">—</b><span class="mono">Days</span></div>
+    </div>
+
+    <div class="result">
+      <div class="row"><span>Total days lived</span><b id="days">—</b></div>
+      <div class="row"><span>Next birthday</span><b id="nb">—</b></div>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="agecalc.js"></script>
+</body>
+</html>
