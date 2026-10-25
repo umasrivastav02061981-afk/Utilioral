@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="basiccalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Basic <em>Calculator.</em></h1>
+  </section>
+
+  <main class="calc">
+    <div class="screen">
+      <div id="history" class="mono"></div>
+      <div id="display">0</div>
+    </div>
+    <div class="keys">
+      <button class="fn" data-k="C">C</button>
+      <button class="fn" data-k="back">⌫</button>
+      <button class="fn" data-k="%">%</button>
+      <button class="op" data-k="/">÷</button>
+
+      <button data-k="7">7</button>
+      <button data-k="8">8</button>
+      <button data-k="9">9</button>
+      <button class="op" data-k="*">×</button>
+
+      <button data-k="4">4</button>
+      <button data-k="5">5</button>
+      <button data-k="6">6</button>
+      <button class="op" data-k="-">−</button>
+
+      <button data-k="1">1</button>
+      <button data-k="2">2</button>
+      <button data-k="3">3</button>
+      <button class="op" data-k="+">+</button>
+
+      <button class="fn" data-k="neg">±</button>
+      <button data-k="0">0</button>
+      <button data-k=".">.</button>
+      <button class="eq" data-k="=">=</button>
+    </div>
+  </main>
+</div>
+<script src="basiccalc.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.calc{max-width:380px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px}
+
+.screen{background:#E9D3A6;border:3px solid var(--ink);border-radius:4px;padding:12px 14px;text-align:right;margin-bottom:16px;min-height:96px}
+#history{min-height:1.2em;opacity:.7;margin-bottom:6px}
+#display{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.4rem;white-space:nowrap;overflow-x:auto}
+
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.keys button{font-family:'Space Mono',monospace;font-weight:700;font-size:1.2rem;padding:16px 0;color:var(--ink);background:var(--tan);border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .1s}
+.keys button:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.keys .fn{background:#F2B8A2}
+.keys .op{background:#F4B27A}
+.keys .eq{background:var(--rust);color:var(--bg)}

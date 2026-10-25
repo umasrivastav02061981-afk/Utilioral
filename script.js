@@ -1,6 +1,5 @@
 const $ = id => document.getElementById(id);
-const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
+const slug = s => SLUGS[s] || s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 // tool count in the hero chip
 const total = CATEGORIES.reduce((n, c) => n + c.tools.length, 0);
 $("count").textContent = "● " + total + " free tools";
