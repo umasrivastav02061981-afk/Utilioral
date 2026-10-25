@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temperature Converter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="tempconv.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Temperature <em>Converter.</em></h1>
+  </section>
+
+  <main class="tc">
+    <div class="chips">
+      <button class="rt" data-c="0">Freezing</button>
+      <button class="rt" data-c="25">Room</button>
+      <button class="rt" data-c="37">Body</button>
+      <button class="rt" data-c="100">Boiling</button>
+    </div>
+
+    <label class="f1">Celsius (°C)
+      <input id="c" type="number" inputmode="decimal" step="any" placeholder="25">
+    </label>
+    <label class="f2">Fahrenheit (°F)
+      <input id="f" type="number" inputmode="decimal" step="any" placeholder="77">
+    </label>
+    <label class="f3">Kelvin (K)
+      <input id="k" type="number" inputmode="decimal" step="any" placeholder="298.15">
+    </label>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="tempconv.js"></script>
+</body>
+</html>
