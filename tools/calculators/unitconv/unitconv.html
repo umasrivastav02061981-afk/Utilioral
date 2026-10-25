@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit Converter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="unitconv.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Unit <em>Converter.</em></h1>
+  </section>
+
+  <main class="uc">
+    <div class="chips" id="cats"></div>
+
+    <label>Value
+      <input id="val" type="number" inputmode="decimal" step="any" placeholder="1">
+    </label>
+
+    <div class="pair">
+      <label>From <select id="from"></select></label>
+      <button class="swap" id="swap" aria-label="Swap units">⇅</button>
+      <label>To <select id="to"></select></label>
+    </div>
+
+    <div class="result">
+      <div id="eq" class="mono"></div>
+      <div id="out">—</div>
+    </div>
+  </main>
+</div>
+<script src="unitconv.js"></script>
+</body>
+</html>
