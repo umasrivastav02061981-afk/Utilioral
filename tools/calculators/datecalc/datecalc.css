@@ -1,0 +1,21 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.dcards{max-width:480px;margin:0 auto 30px;display:grid;gap:20px}
+.dcard{border:3px solid var(--ink);border-radius:4px;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+.c1{background:#F6C9A8}
+.c2{background:#F3DC95}
+.dcard h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.3rem}
+
+label{display:grid;gap:6px;font-weight:700}
+.dcard input,.dcard select{width:100%;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;color:var(--ink);background:#fff8ea;outline:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+.units{display:flex;gap:10px}
+.u{flex:1;font-family:'Space Mono',monospace;font-weight:700;font-size:.9rem;padding:10px;color:var(--ink);background:var(--tan);border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .1s}
+.u.on{background:var(--rust);color:var(--bg)}
+.u:active{transform:translate(3px,3px)}
+
+.out{border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;padding:14px;text-align:center}
+#days,#res{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.8rem;line-height:1.2;word-break:break-word}
+#ymd,#weeks{margin-top:6px;font-size:.7rem}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Date Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="datecalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Date <em>Calculator.</em></h1>
+  </section>
+
+  <main class="dcards">
+    <section class="dcard c1">
+      <h2>Days between dates</h2>
+      <label>From <input id="from" type="date"></label>
+      <label>To <input id="to" type="date"></label>
+      <div class="out">
+        <div id="days">—</div>
+        <div id="ymd" class="mono"></div>
+        <div id="weeks" class="mono"></div>
+      </div>
+    </section>
+
+    <section class="dcard c2">
+      <h2>Add or subtract</h2>
+      <label>Start date <input id="start" type="date"></label>
+      <div class="units">
+        <button class="u on" data-s="1">Add</button>
+        <button class="u" data-s="-1">Subtract</button>
+      </div>
+      <div class="two">
+        <label>Amount <input id="amt" type="number" inputmode="numeric" min="0" step="1" placeholder="100"></label>
+        <label>Unit
+          <select id="unit">
+            <option value="days">Days</option>
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+          </select>
+        </label>
+      </div>
+      <div class="out">
+        <div id="res">—</div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="datecalc.js"></script>
+</body>
+</html>
