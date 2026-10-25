@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utilioral: Every tool you need</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="#grid">Browse ↓</a>
+  </header>
+
+  <section class="hero">
+    <span class="chip mono" id="count">● free tools</span>
+    <h1>Every tool<br>you <b>need</b>,<br><em>one place.</em></h1>
+    <p>PDF, images, calculators and more. Free, fast and private.</p>
+  </section>
+
+  <div class="search">
+    <input id="q" placeholder="Search tools..." autocomplete="off">
+    <button class="btn main" id="go">Go →</button>
+  </div>
+
+  <section id="panel" class="panel" hidden>
+    <div class="panel-head">
+      <b id="panelTitle"></b>
+      <button class="btn" id="closePanel">✕</button>
+    </div>
+    <div class="tools" id="panelTools"></div>
+  </section>
+
+  <div class="marquee mono"><div>Free <i>✦</i> Private <i>✦</i> No Login <i>✦</i> Fast <i>✦</i> Free <i>✦</i> Private <i>✦</i> No Login <i>✦</i> Fast <i>✦</i> Free <i>✦</i> Private <i>✦</i> No Login <i>✦</i> Fast <i>✦</i> Free <i>✦</i> Private <i>✦</i> No Login <i>✦</i> Fast <i>✦</i></div></div>
+
+  <h2 class="sec mono">Categories</h2>
+  <div class="grid" id="grid"></div>
+
+  <footer class="mono">Utilioral · Free · Private · No login</footer>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="data/tools.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
