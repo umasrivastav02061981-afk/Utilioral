@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scientific Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="scicalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Scientific <em>Calculator.</em></h1>
+  </section>
+
+  <main class="sc">
+    <div class="units" id="mode">
+      <button class="u on" data-d="1">DEG</button>
+      <button class="u" data-d="0">RAD</button>
+    </div>
+
+    <div class="screen">
+      <div id="hist" class="mono"></div>
+      <div id="disp">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="f" data-k="sin(">sin</button>
+      <button class="f" data-k="cos(">cos</button>
+      <button class="f" data-k="tan(">tan</button>
+      <button class="f" data-k="log(">log</button>
+      <button class="f" data-k="ln(">ln</button>
+
+      <button class="f" data-k="(">(</button>
+      <button class="f" data-k=")">)</button>
+      <button class="f" data-k="√(">√</button>
+      <button class="f" data-k="^">^</button>
+      <button class="f" data-k="!">!</button>
+
+      <button data-k="7">7</button>
+      <button data-k="8">8</button>
+      <button data-k="9">9</button>
+      <button class="o" data-k="÷">÷</button>
+      <button class="c" data-k="C">C</button>
+
+      <button data-k="4">4</button>
+      <button data-k="5">5</button>
+      <button data-k="6">6</button>
+      <button class="o" data-k="×">×</button>
+      <button class="c" data-k="back">⌫</button>
+
+      <button data-k="1">1</button>
+      <button data-k="2">2</button>
+      <button data-k="3">3</button>
+      <button class="o" data-k="−">−</button>
+      <button class="p" data-k="π">π</button>
+
+      <button data-k="0">0</button>
+      <button data-k=".">.</button>
+      <button class="p" data-k="e">e</button>
+      <button class="o" data-k="+">+</button>
+      <button class="eq" data-k="=">=</button>
+    </div>
+  </main>
+</div>
+<script src="scicalc.js"></script>
+</body>
+</html>
