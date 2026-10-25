@@ -1,7 +1,6 @@
 // Add a tool's slug here once its page is built, e.g. "bmi"
-const READY = ["basiccalc", "percentcalc", "bmicalc"];
-const SLUGS = { "Basic Calculator": "basiccalc", "Percentage": "percentcalc", "BMI": "bmicalc" };
-
+const READY = ["basiccalc", "percentcalc", "bmicalc", "emicalc"];
+const SLUGS = { "Basic Calculator": "basiccalc", "Percentage": "percentcalc", "BMI": "bmicalc", "EMI": "emicalc" };
 const CATEGORIES = [
   { id: "calculators", name: "Calculators", icon: "🧮", tools: ["Basic Calculator","Scientific Calculator","Fraction","Percentage","BMI","EMI","GST","Discount","Interest","Age Calculator","Date Calculator","Unit Converter","Temperature","Dice"] },
   { id: "pdf", name: "PDF Studio", icon: "📄", tools: ["Images to PDF","Merge PDF","Split PDF","Rotate PDF","Extract Pages"] },

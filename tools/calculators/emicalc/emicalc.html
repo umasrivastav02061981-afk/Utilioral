@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMI Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="emicalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>EMI <em>Calculator.</em></h1>
+  </section>
+
+  <main class="emi">
+    <label>Loan amount (₹)
+      <input id="amt" type="number" inputmode="decimal" step="any" placeholder="500000">
+    </label>
+
+    <label>Interest rate (% per year)
+      <input id="rate" type="number" inputmode="decimal" step="any" placeholder="10">
+    </label>
+
+    <label>Tenure
+      <input id="ten" type="number" inputmode="decimal" step="any" placeholder="5">
+    </label>
+    <div class="units">
+      <button class="u on" data-m="0">Years</button>
+      <button class="u" data-m="1">Months</button>
+    </div>
+
+    <div class="result">
+      <div class="mono">Monthly EMI</div>
+      <div id="emi">—</div>
+      <div class="row"><span>Total interest</span><b id="int">—</b></div>
+      <div class="row"><span>Total payment</span><b id="tot">—</b></div>
+      <div class="bar"><span id="pr"></span><span id="in"></span></div>
+      <div class="legend mono"><span>■ Principal</span><span>■ Interest</span></div>
+    </div>
+  </main>
+</div>
+<script src="emicalc.js"></script>
+</body>
+</html>
