@@ -1,0 +1,17 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.dis{max-width:420px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label,.lbl{display:grid;gap:6px;font-weight:700}
+label small{font-weight:400;opacity:.7;font-size:.65rem}
+.dis input{width:100%;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;background:#fff8ea;outline:none}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.rt{font-family:'Space Mono',monospace;font-weight:700;font-size:.9rem;padding:10px 14px;color:var(--ink);background:var(--tan);border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .1s}
+.rt.on{background:var(--rust);color:var(--bg)}
+.rt:active{transform:translate(3px,3px)}
+
+.result{border:3px solid var(--ink);border-radius:4px;padding:16px;background:#E9D3A6}
+#final{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.6rem;line-height:1.1;margin:6px 0 14px;word-break:break-word}
+.row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:2px dashed var(--ink)}
+.note{text-align:center;opacity:.7;font-size:.65rem;line-height:1.5}

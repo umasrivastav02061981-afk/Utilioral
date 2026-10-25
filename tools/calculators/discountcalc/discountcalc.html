@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="discountcalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Discount <em>Calculator.</em></h1>
+  </section>
+
+  <main class="dis">
+    <label>Original price (₹)
+      <input id="price" type="number" inputmode="decimal" step="any" placeholder="2000">
+    </label>
+
+    <div>
+      <div class="lbl">Discount %</div>
+      <div class="chips">
+        <button class="rt" data-r="10">10%</button>
+        <button class="rt" data-r="20">20%</button>
+        <button class="rt" data-r="30">30%</button>
+        <button class="rt" data-r="50">50%</button>
+      </div>
+    </div>
+
+    <label>Discount (%)
+      <input id="d1" type="number" inputmode="decimal" step="any" placeholder="20">
+    </label>
+
+    <label>Extra discount (%) <small class="mono">optional</small>
+      <input id="d2" type="number" inputmode="decimal" step="any" placeholder="10">
+    </label>
+
+    <div class="result">
+      <div class="mono">Final price</div>
+      <div id="final">—</div>
+      <div class="row"><span>After first discount</span><b id="step">—</b></div>
+      <div class="row"><span>You save</span><b id="save">—</b></div>
+      <div class="row"><span>Total discount</span><b id="eff">—</b></div>
+    </div>
+
+    <p class="note mono">The extra discount applies after the first one, so 20% + 10% is 28% in total, not 30%.</p>
+  </main>
+</div>
+<script src="discountcalc.js"></script>
+</body>
+</html>
