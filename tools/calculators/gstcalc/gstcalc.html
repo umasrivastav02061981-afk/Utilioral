@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GST Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="gstcalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>GST <em>Calculator.</em></h1>
+  </section>
+
+  <main class="gst">
+    <div class="units">
+      <button class="u on" data-m="add">Add GST</button>
+      <button class="u" data-m="remove">Remove GST</button>
+    </div>
+
+    <label><span id="amtText">Amount before GST (₹)</span>
+      <input id="amt" type="number" inputmode="decimal" step="any" placeholder="1000">
+    </label>
+
+    <div>
+      <div class="lbl">GST rate</div>
+      <div class="chips">
+        <button class="rt" data-r="0.25">0.25%</button>
+        <button class="rt" data-r="3">3%</button>
+        <button class="rt" data-r="5">5%</button>
+        <button class="rt on" data-r="18">18%</button>
+        <button class="rt" data-r="40">40%</button>
+      </div>
+    </div>
+
+    <label>Custom rate (%)
+      <input id="rate" type="number" inputmode="decimal" step="any" value="18">
+    </label>
+
+    <div class="result">
+      <div class="mono" id="bl">Amount with GST</div>
+      <div id="big">—</div>
+      <div class="row"><span>Before GST</span><b id="base">—</b></div>
+      <div class="row"><span>GST amount</span><b id="gst">—</b></div>
+      <div class="row"><span>CGST (half)</span><b id="cgst">—</b></div>
+      <div class="row"><span>SGST (half)</span><b id="sgst">—</b></div>
+      <div class="row"><span>With GST</span><b id="total">—</b></div>
+    </div>
+
+    <p class="note mono">Same state: CGST + SGST. Other state: IGST (the full GST amount). Use Custom for old 12% or 28% bills.</p>
+  </main>
+</div>
+<script src="gstcalc.js"></script>
+</body>
+</html>
