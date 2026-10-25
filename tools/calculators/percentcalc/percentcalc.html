@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Percentage Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="percentcalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Percentage <em>Calculator.</em></h1>
+  </section>
+
+  <main class="pcards">
+    <section class="pcard p1">
+      <p class="row">What is
+        <input id="a1" type="number" inputmode="decimal" step="any" placeholder="20"> % of
+        <input id="b1" type="number" inputmode="decimal" step="any" placeholder="500"> ?</p>
+      <div class="result" id="r1">—</div>
+    </section>
+
+    <section class="pcard p2">
+      <p class="row">
+        <input id="a2" type="number" inputmode="decimal" step="any" placeholder="50"> is what % of
+        <input id="b2" type="number" inputmode="decimal" step="any" placeholder="200"> ?</p>
+      <div class="result" id="r2">—</div>
+    </section>
+
+    <section class="pcard p3">
+      <p class="row">% change from
+        <input id="a3" type="number" inputmode="decimal" step="any" placeholder="80"> to
+        <input id="b3" type="number" inputmode="decimal" step="any" placeholder="100"></p>
+      <div class="result" id="r3">—</div>
+    </section>
+  </main>
+</div>
+<script src="percentcalc.js"></script>
+</body>
+</html>

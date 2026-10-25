@@ -1,0 +1,13 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.pcards{max-width:520px;margin:0 auto 30px;display:grid;gap:20px}
+.pcard{border:3px solid var(--ink);border-radius:4px;box-shadow:6px 6px 0 var(--ink);padding:16px}
+.p1{background:#F6C9A8}
+.p2{background:#F3DC95}
+.p3{background:#C9D5A8}
+
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-weight:700;font-size:1.05rem}
+.row input{width:110px;border:3px solid var(--ink);border-radius:4px;padding:10px;font-size:1rem;background:#F4ECDC;outline:none}
+
+.result{margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2rem;word-break:break-word}

@@ -1,6 +1,6 @@
 // Add a tool's slug here once its page is built, e.g. "bmi"
-const READY = ["basiccalc"];
-const SLUGS = { "Basic Calculator": "basiccalc" };
+const READY = ["basiccalc", "percentcalc"];
+const SLUGS = { "Basic Calculator": "basiccalc", "Percentage": "percentcalc" };
 
 const CATEGORIES = [
   { id: "calculators", name: "Calculators", icon: "🧮", tools: ["Basic Calculator","Scientific Calculator","Fraction","Percentage","BMI","EMI","GST","Discount","Interest","Age Calculator","Date Calculator","Unit Converter","Temperature","Dice"] },
