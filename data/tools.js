@@ -1,6 +1,6 @@
 // Add a tool's slug here once its page is built, e.g. "bmi"
-const READY = ["basiccalc", "percentcalc", "bmicalc", "emicalc", "gstcalc", "discountcalc", "interestcalc", "agecalc", "datecalc", "unitconv", "tempconv"];
-const SLUGS = { "Basic Calculator": "basiccalc", "Percentage": "percentcalc", "BMI": "bmicalc", "EMI": "emicalc", "GST": "gstcalc", "Discount": "discountcalc", "Interest": "interestcalc", "Age Calculator": "agecalc", "Date Calculator": "datecalc", "Unit Converter": "unitconv", "Temperature": "tempconv" };
+const READY = ["basiccalc", "percentcalc", "bmicalc", "emicalc", "gstcalc", "discountcalc", "interestcalc", "agecalc", "datecalc", "unitconv", "tempconv", "fraccalc"];
+const SLUGS = { "Basic Calculator": "basiccalc", "Percentage": "percentcalc", "BMI": "bmicalc", "EMI": "emicalc", "GST": "gstcalc", "Discount": "discountcalc", "Interest": "interestcalc", "Age Calculator": "agecalc", "Date Calculator": "datecalc", "Unit Converter": "unitconv", "Temperature": "tempconv", "Fraction": "fraccalc" };
 const CATEGORIES = [
   { id: "calculators", name: "Calculators", icon: "🧮", tools: ["Basic Calculator","Scientific Calculator","Fraction","Percentage","BMI","EMI","GST","Discount","Interest","Age Calculator","Date Calculator","Unit Converter","Temperature","Dice"] },
   { id: "pdf", name: "PDF Studio", icon: "📄", tools: ["Images to PDF","Merge PDF","Split PDF","Rotate PDF","Extract Pages"] },

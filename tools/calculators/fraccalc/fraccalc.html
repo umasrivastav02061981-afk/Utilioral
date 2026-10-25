@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fraction Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="fraccalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Fraction <em>Calculator.</em></h1>
+  </section>
+
+  <main class="fc">
+    <div class="eq">
+      <div class="frac f1">
+        <input id="a" type="number" inputmode="numeric" step="1" placeholder="1">
+        <i></i>
+        <input id="b" type="number" inputmode="numeric" step="1" placeholder="2">
+      </div>
+      <div id="sym">+</div>
+      <div class="frac f2">
+        <input id="c" type="number" inputmode="numeric" step="1" placeholder="1">
+        <i></i>
+        <input id="d" type="number" inputmode="numeric" step="1" placeholder="3">
+      </div>
+    </div>
+
+    <div class="units">
+      <button class="u on" data-o="+">+</button>
+      <button class="u" data-o="-">−</button>
+      <button class="u" data-o="*">×</button>
+      <button class="u" data-o="/">÷</button>
+    </div>
+
+    <div class="result">
+      <div class="mono">Answer</div>
+      <div id="out">—</div>
+      <div class="row"><span>Mixed number</span><b id="mix">—</b></div>
+      <div class="row"><span>Decimal</span><b id="dec">—</b></div>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="fraccalc.js"></script>
+</body>
+</html>
