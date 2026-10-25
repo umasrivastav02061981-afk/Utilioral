@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interest Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="interestcalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Interest <em>Calculator.</em></h1>
+  </section>
+
+  <main class="int">
+    <div class="units" id="modes">
+      <button class="u on" data-m="simple">Simple</button>
+      <button class="u" data-m="compound">Compound</button>
+    </div>
+
+    <label>Principal amount (₹)
+      <input id="p" type="number" inputmode="decimal" step="any" placeholder="10000">
+    </label>
+
+    <label>Interest rate (% per year)
+      <input id="r" type="number" inputmode="decimal" step="any" placeholder="8">
+    </label>
+
+    <label>Time
+      <input id="t" type="number" inputmode="decimal" step="any" placeholder="3">
+    </label>
+    <div class="units" id="tunits">
+      <button class="u on" data-t="years">Years</button>
+      <button class="u" data-t="months">Months</button>
+    </div>
+
+    <label id="freqBox" hidden>Compounded
+      <select id="freq">
+        <option value="1">Yearly</option>
+        <option value="2">Half-yearly</option>
+        <option value="4">Quarterly</option>
+        <option value="12">Monthly</option>
+      </select>
+    </label>
+
+    <div class="result">
+      <div class="mono">Final amount</div>
+      <div id="total">—</div>
+      <div class="row"><span>Principal</span><b id="prin">—</b></div>
+      <div class="row"><span>Interest earned</span><b id="intr">—</b></div>
+    </div>
+  </main>
+</div>
+<script src="interestcalc.js"></script>
+</body>
+</html>
