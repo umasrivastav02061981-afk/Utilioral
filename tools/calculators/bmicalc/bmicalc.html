@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI Calculator | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="bmicalc.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>BMI <em>Calculator.</em></h1>
+  </section>
+
+  <main class="bmi">
+    <div class="units">
+      <button class="u on" data-u="metric">Metric</button>
+      <button class="u" data-u="imperial">Imperial</button>
+    </div>
+
+    <label>Weight (<span id="wu">kg</span>)
+      <input id="w" type="number" inputmode="decimal" step="any" placeholder="70">
+    </label>
+
+    <label id="hMetric">Height (cm)
+      <input id="hcm" type="number" inputmode="decimal" step="any" placeholder="170">
+    </label>
+
+    <div id="hImp" class="two" hidden>
+      <label>Feet
+        <input id="hft" type="number" inputmode="decimal" step="any" placeholder="5">
+      </label>
+      <label>Inches
+        <input id="hin" type="number" inputmode="decimal" step="any" placeholder="7">
+      </label>
+    </div>
+
+    <div class="result" id="res">
+      <div id="val">—</div>
+      <div id="cat" class="mono">Enter your details</div>
+      <div id="range"></div>
+    </div>
+
+    <p class="note mono">General guide only, not medical advice.</p>
+  </main>
+</div>
+<script src="bmicalc.js"></script>
+</body>
+</html>
