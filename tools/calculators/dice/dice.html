@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dice & Random Number | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="dice.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">🧮 Calculators</span>
+    <h1>Dice & <em>Random.</em></h1>
+  </section>
+
+  <main class="dcards">
+    <section class="dcard c1">
+      <h2>Roll dice</h2>
+      <div class="chips" id="counts">
+        <button class="rt" data-n="1">1</button>
+        <button class="rt on" data-n="2">2</button>
+        <button class="rt" data-n="3">3</button>
+        <button class="rt" data-n="4">4</button>
+        <button class="rt" data-n="5">5</button>
+        <button class="rt" data-n="6">6</button>
+      </div>
+      <div class="dice" id="dice"></div>
+      <div class="total mono" id="total"></div>
+      <button class="btn main" id="roll">Roll 🎲</button>
+    </section>
+
+    <section class="dcard c2">
+      <h2>Random number</h2>
+      <div class="two">
+        <label>Min <input id="min" type="number" inputmode="numeric" step="1" value="1"></label>
+        <label>Max <input id="max" type="number" inputmode="numeric" step="1" value="100"></label>
+      </div>
+      <button class="btn main" id="gen">Generate</button>
+      <div class="out" id="rnd">—</div>
+    </section>
+  </main>
+</div>
+<script src="dice.js"></script>
+</body>
+</html>
