@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Converter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="caseconv.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Case <em>Converter.</em></h1>
+  </section>
+
+  <main class="cc">
+    <label>Your text
+      <textarea id="inp" placeholder="Type or paste your text here..."></textarea>
+    </label>
+
+    <div class="chips" id="cases"></div>
+
+    <label>Result
+      <textarea id="out" readonly placeholder="Pick a case above and the result appears here"></textarea>
+    </label>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy result</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="caseconv.js"></script>
+</body>
+</html>
