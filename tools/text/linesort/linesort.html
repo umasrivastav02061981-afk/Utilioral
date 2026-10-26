@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Line Sorter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="linesort.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Line <em>Sorter.</em></h1>
+  </section>
+
+  <main class="ls">
+    <label>Your lines (one item per line)
+      <textarea id="inp" placeholder="banana&#10;Apple&#10;cherry&#10;apple"></textarea>
+    </label>
+
+    <div class="opts">
+      <label class="opt"><input type="checkbox" id="icase" checked> Ignore UPPER / lower case</label>
+      <label class="opt"><input type="checkbox" id="nat"> Natural order (file2 before file10)</label>
+    </div>
+
+    <div class="chips" id="acts"></div>
+
+    <label>Result
+      <textarea id="out" readonly placeholder="Pick an action above and the result appears here"></textarea>
+    </label>
+
+    <div class="stats mono" id="stats"></div>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy result</button>
+      <button class="btn" id="use">Use as input</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="linesort.js"></script>
+</body>
+</html>
