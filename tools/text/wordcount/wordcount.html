@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Counter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="wordcount.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Word <em>Counter.</em></h1>
+  </section>
+
+  <main class="wc">
+    <label>Type or paste your text
+      <textarea id="txt" placeholder="Start typing here..."></textarea>
+    </label>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy text</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <div class="tiles">
+      <div class="tile"><b id="w">0</b><span class="mono">Words</span></div>
+      <div class="tile"><b id="c">0</b><span class="mono">Characters</span></div>
+      <div class="tile"><b id="cn">0</b><span class="mono">No spaces</span></div>
+      <div class="tile"><b id="s">0</b><span class="mono">Sentences</span></div>
+      <div class="tile"><b id="p">0</b><span class="mono">Paragraphs</span></div>
+    </div>
+
+    <div class="result">
+      <div class="row"><span>Reading time</span><b id="rt">0 sec</b></div>
+      <div class="row"><span>Speaking time</span><b id="st">0 sec</b></div>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="wordcount.js"></script>
+</body>
+</html>

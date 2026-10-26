@@ -1,0 +1,24 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.wc{max-width:640px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700}
+.wc textarea{width:100%;min-height:200px;resize:vertical;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;color:var(--ink);background:#fff8ea;outline:none}
+
+.actions{display:flex;gap:12px}
+.actions .btn{flex:1;text-align:center}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}
+.tile{border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);padding:12px 6px;text-align:center}
+.tile b{display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.8rem;line-height:1.1;word-break:break-word}
+.tile span{font-size:.62rem}
+.tile:nth-child(1){background:#F6C9A8}
+.tile:nth-child(2){background:#F3DC95}
+.tile:nth-child(3){background:#C9D5A8}
+.tile:nth-child(4){background:#F2B8A2}
+.tile:nth-child(5){background:#F4B27A}
+
+.result{border:3px solid var(--ink);border-radius:4px;padding:8px 16px;background:#E9D3A6}
+.row{display:flex;justify-content:space-between;gap:10px;padding:8px 0}
+.row + .row{border-top:2px dashed var(--ink)}
+.note{text-align:center;min-height:1em;font-size:.65rem;color:var(--rust)}
