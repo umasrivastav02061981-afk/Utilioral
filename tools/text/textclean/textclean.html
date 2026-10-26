@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text Cleaner | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="textclean.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Text <em>Cleaner.</em></h1>
+  </section>
+
+  <main class="tc">
+    <label>Your messy text
+      <textarea id="inp" placeholder="Paste your text here..."></textarea>
+    </label>
+
+    <div class="opts">
+      <label class="opt"><input type="checkbox" id="trim" checked> Trim each line</label>
+      <label class="opt"><input type="checkbox" id="spaces" checked> Fix extra spaces</label>
+      <label class="opt"><input type="checkbox" id="blank" checked> Remove blank lines</label>
+      <label class="opt"><input type="checkbox" id="join"> Join into one paragraph</label>
+      <label class="opt"><input type="checkbox" id="html"> Remove HTML tags</label>
+      <label class="opt"><input type="checkbox" id="emoji"> Remove emojis</label>
+      <label class="opt"><input type="checkbox" id="special"> Remove special characters</label>
+    </div>
+
+    <label>Clean result
+      <textarea id="out" readonly placeholder="Your cleaned text appears here"></textarea>
+    </label>
+
+    <div class="stats mono" id="stats"></div>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy result</button>
+      <button class="btn" id="use">Use as input</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="textclean.js"></script>
+</body>
+</html>
