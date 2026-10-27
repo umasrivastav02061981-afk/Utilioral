@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown Preview | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="mdpreview.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Markdown <em>Preview.</em></h1>
+  </section>
+
+  <main class="md">
+    <div class="tabs">
+      <button class="u on" id="tabW">Write</button>
+      <button class="u" id="tabP">Preview</button>
+    </div>
+
+    <div class="panes">
+      <section class="pane" id="paneW">
+        <label>Markdown
+          <textarea id="inp" spellcheck="false"></textarea>
+        </label>
+      </section>
+      <section class="pane hide" id="paneP">
+        <div class="lbl">Preview</div>
+        <div id="view" class="view"></div>
+      </section>
+    </div>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy HTML</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+    <p class="hint mono">Supports headings, bold, italic, lists, task lists, quotes, links and code. Tables and nested lists come later.</p>
+  </main>
+</div>
+<script src="mdpreview.js"></script>
+</body>
+</html>

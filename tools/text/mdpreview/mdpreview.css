@@ -1,0 +1,44 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.md{max-width:1000px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label,.lbl{display:grid;gap:6px;font-weight:700}
+
+.tabs{display:flex;gap:10px}
+.u{flex:1;font-family:'Space Mono',monospace;font-weight:700;font-size:.9rem;padding:9px;color:var(--ink);background:var(--tan);border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .1s}
+.u.on{background:var(--rust);color:var(--bg)}
+.u:active{transform:translate(3px,3px)}
+
+.panes{display:grid;gap:14px}
+.pane.hide{display:none}
+@media(min-width:800px){
+  .panes{grid-template-columns:1fr 1fr}
+  .pane.hide{display:block}
+  .tabs{display:none}
+}
+
+.md textarea{width:100%;min-height:340px;resize:vertical;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:.95rem;font-family:'Space Mono',monospace;font-weight:400;line-height:1.5;color:var(--ink);background:#fff8ea;outline:none}
+
+.view{min-height:340px;border:3px solid var(--ink);border-radius:4px;padding:14px;background:#E9D3A6;overflow-wrap:anywhere;line-height:1.6}
+.view>*:first-child{margin-top:0}
+.view h1,.view h2,.view h3,.view h4,.view h5,.view h6{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:1.15;margin:18px 0 8px}
+.view h1{font-size:2rem}
+.view h2{font-size:1.6rem}
+.view h3{font-size:1.3rem}
+.view h4,.view h5,.view h6{font-size:1.1rem}
+.view p{margin:10px 0}
+.view ul,.view ol{margin:10px 0;padding-left:26px}
+.view li{margin:4px 0}
+.view li input{margin-right:6px;accent-color:var(--rust)}
+.view blockquote{margin:12px 0;padding:8px 14px;border-left:6px solid var(--rust);background:#F4ECDC}
+.view code{font-family:'Space Mono',monospace;font-size:.85em;background:#F4ECDC;border:2px solid var(--ink);border-radius:3px;padding:1px 5px}
+.view pre{margin:12px 0;padding:12px;background:#F4ECDC;border:3px solid var(--ink);border-radius:4px;overflow-x:auto}
+.view pre code{border:0;background:none;padding:0}
+.view a{color:var(--green);font-weight:700}
+.view hr{border:0;border-top:3px solid var(--ink);margin:16px 0}
+.view .empty{opacity:.6}
+
+.actions{display:flex;gap:12px}
+.actions .btn{flex:1;text-align:center}
+.note{text-align:center;min-height:1em;font-size:.65rem;color:var(--rust)}
+.hint{text-align:center;font-size:.62rem;opacity:.7;line-height:1.5}
