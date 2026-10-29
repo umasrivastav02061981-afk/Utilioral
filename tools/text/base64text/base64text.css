@@ -1,0 +1,21 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.b6{max-width:640px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700}
+.b6 textarea{width:100%;min-height:130px;resize:vertical;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;color:var(--ink);background:#fff8ea;outline:none;word-break:break-all}
+#out{background:#E9D3A6}
+
+.tabs{display:flex;gap:10px}
+.u{flex:1;font-family:'Space Mono',monospace;font-weight:700;font-size:.9rem;padding:10px;color:var(--ink);background:var(--tan);border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .1s}
+.u.on{background:var(--rust);color:var(--bg)}
+.u:active{transform:translate(3px,3px)}
+
+.opt{display:flex;align-items:center;gap:10px;border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);padding:10px 12px;font-size:.9rem;cursor:pointer;background:#F3DC95}
+.opt input{width:20px;height:20px;accent-color:var(--rust);flex:none}
+
+.stats{text-align:center;min-height:1em;font-size:.7rem}
+.stats.err{color:var(--rust)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.actions .btn{flex:1;text-align:center;white-space:nowrap}
+.note{text-align:center;min-height:1em;font-size:.65rem;color:var(--rust)}

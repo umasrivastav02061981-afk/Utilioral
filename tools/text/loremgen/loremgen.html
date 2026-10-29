@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorem Ipsum | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="loremgen.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>Lorem <em>Ipsum.</em></h1>
+  </section>
+
+  <main class="lg">
+    <div class="two">
+      <label>How many
+        <input id="n" type="number" inputmode="numeric" min="1" step="1" value="3">
+      </label>
+      <label>Type
+        <select id="unit">
+          <option value="p">Paragraphs</option>
+          <option value="s">Sentences</option>
+          <option value="w">Words</option>
+        </select>
+      </label>
+    </div>
+
+    <label class="opt"><input type="checkbox" id="start" checked> Start with "Lorem ipsum dolor sit amet"</label>
+
+    <label>Result
+      <textarea id="out" readonly></textarea>
+    </label>
+
+    <div class="stats mono" id="stats"></div>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy text</button>
+      <button class="btn" id="again">Generate again</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+    <p class="hint mono">Maximum: 50 paragraphs, 200 sentences or 2,000 words.</p>
+  </main>
+</div>
+<script src="loremgen.js"></script>
+</body>
+</html>

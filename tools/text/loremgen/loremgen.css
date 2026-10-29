@@ -1,0 +1,17 @@
+.tool-head{text-align:center;margin:28px 0 20px}
+.tool-head h1{font-size:clamp(2rem,6vw,3.5rem)}
+
+.lg{max-width:640px;margin:0 auto 30px;border:3px solid var(--ink);border-radius:4px;background:#F4ECDC;box-shadow:6px 6px 0 var(--ink);padding:16px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lg input[type=number],.lg select{width:100%;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;color:var(--ink);background:#fff8ea;outline:none}
+.lg textarea{width:100%;min-height:260px;resize:vertical;border:3px solid var(--ink);border-radius:4px;padding:12px;font-size:1rem;font-family:inherit;line-height:1.6;color:var(--ink);background:#E9D3A6;outline:none}
+
+.opt{display:flex;align-items:center;gap:10px;border:3px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);padding:10px 12px;font-size:.9rem;cursor:pointer;background:#F3DC95}
+.opt input{width:20px;height:20px;accent-color:var(--rust);flex:none}
+
+.stats{text-align:center;min-height:1em;font-size:.7rem}
+.actions{display:flex;gap:12px}
+.actions .btn{flex:1;text-align:center}
+.note{text-align:center;min-height:1em;font-size:.65rem;color:var(--rust)}
+.hint{text-align:center;font-size:.62rem;opacity:.7}

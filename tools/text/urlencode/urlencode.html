@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URL Encoder | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="urlencode.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>URL <em>Encoder.</em></h1>
+  </section>
+
+  <main class="ue">
+    <div class="tabs" id="modes">
+      <button class="u on" data-m="enc">Encode</button>
+      <button class="u" data-m="dec">Decode</button>
+    </div>
+
+    <div class="tabs" id="scopes">
+      <button class="u on" data-s="part">Text part</button>
+      <button class="u" data-s="full">Full URL</button>
+    </div>
+
+    <label><span id="inLabel">Text or URL to encode</span>
+      <textarea id="inp" placeholder="hello world & more?"></textarea>
+    </label>
+
+    <label>Result
+      <textarea id="out" readonly placeholder="Result appears here"></textarea>
+    </label>
+
+    <div class="stats mono" id="stats"></div>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy result</button>
+      <button class="btn" id="swap">Swap ⇅</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+    <p class="hint mono">Text part encodes everything (best for a search word or value). Full URL keeps the address structure.</p>
+  </main>
+</div>
+<script src="urlencode.js"></script>
+</body>
+</html>

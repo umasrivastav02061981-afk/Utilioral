@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSON Formatter | Utilioral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Instrument+Serif:ital@1&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="jsonfmt.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Util<span>ioral</span></div>
+    <a class="btn" href="../../../index.html">← Home</a>
+  </header>
+
+  <section class="tool-head">
+    <span class="chip mono">✍️ Text Tools</span>
+    <h1>JSON <em>Formatter.</em></h1>
+  </section>
+
+  <main class="jf">
+    <label>Your JSON
+      <textarea id="inp" spellcheck="false" placeholder='{"name":"Utilioral","tools":[1,2,3]}'></textarea>
+    </label>
+
+    <div class="row2">
+      <label>Indent
+        <select id="indent">
+          <option value="2">2 spaces</option>
+          <option value="4">4 spaces</option>
+          <option value="tab">Tab</option>
+        </select>
+      </label>
+      <label class="opt"><input type="checkbox" id="sort"> Sort keys A → Z</label>
+    </div>
+
+    <div class="chips" id="acts">
+      <button class="rt on" data-a="format">Format</button>
+      <button class="rt" data-a="min">Minify</button>
+    </div>
+
+    <div class="status mono" id="status"></div>
+
+    <label>Result
+      <textarea id="out" readonly spellcheck="false" placeholder="Formatted JSON appears here"></textarea>
+    </label>
+
+    <div class="actions">
+      <button class="btn main" id="copy">Copy result</button>
+      <button class="btn" id="use">Use as input</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <p id="msg" class="note mono"></p>
+  </main>
+</div>
+<script src="jsonfmt.js"></script>
+</body>
+</html>
